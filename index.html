@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator for Fahmida Yeasmin</title>
+
+    <!-- local css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculatorFrame">
+        <div class="calcuatorWindow">
+            <input type="text" name="" class="screen" id="screen" placeholder="0" readonly>
+        </div>
+
+        <div class="calculatorPad">
+            <ul>
+                <li><button onclick="clearScreen()">C</button></li>
+                <li><button>&radic;</button></li>
+                <li><button>%</button></li>
+                <li><button>/</button></li>
+            </ul>
+
+
+            <ul>
+                <li><button onclick="displayDigit('7')">7</button></li>
+                <li><button onclick="displayDigit('8')">8</button></li>
+                <li><button onclick="displayDigit('9')">9</button></li>
+                <li><button onclick="displayDigit('*')">X</button></li>
+            </ul>
+
+            <ul>
+                <li><button onclick="displayDigit('4')">4</button></li>
+                <li><button onclick="displayDigit('5')">5</button></li>
+                <li><button onclick="displayDigit('6')">6</button></li>
+                <li><button onclick="displayDigit('-')">-</button></li>
+            </ul>
+
+
+            <ul>
+                <li><button onclick="displayDigit('1')">1</button></li>
+                <li><button onclick="displayDigit('2')">2</button></li>
+                <li><button onclick="displayDigit('3')">3</button></li>
+                <li><button onclick="displayDigit('+')">+</button></li>
+            </ul>
+
+            <ul>
+                <li><button onclick="displayDigit('0')">0</button></li>
+                <li><button onclick="displayDigit('.')">.</button></li>
+                <li><button onclick="calculate()">=</button></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
