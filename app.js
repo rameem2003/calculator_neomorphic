@@ -8,6 +8,12 @@ function clearScreen(){
 
 function calculate(){
     let a = document.getElementById("screen").value;
-    let b = eval(a);
-    document.getElementById("screen").value = b;
+
+    if(a == ""){
+        document.getElementById("screen").value = null
+    }else{
+        let b = eval(a);
+        document.getElementById("screen").value = b;
+    }
+
 }
