@@ -6,6 +6,10 @@ function clearScreen(){
     document.getElementById("screen").value = "";
 }
 
+function root(){
+    document.getElementById("screen").value = Math.sqrt(document.getElementById("screen").value)
+}
+
 function calculate(){
     let a = document.getElementById("screen").value;
 
